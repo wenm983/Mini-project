@@ -1,38 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>SOEN 345 – Mobile Health App Case Study</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f9f9f9;
-      color: #222;
-    }
-    h1, h2 {
-      color: #2c5f2d;
-    }
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-      border-radius: 10px;
-    }
-    section {
-      margin-bottom: 60px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UX Strategy Report – Mobile Health Management App</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+<a class="skip-link" href="#research">Skip to content</a>
 
-<h1>SOEN 345 – Mobile Health Management App</h1>
-<p>This page hosts visual assets for the UX case study.</p>
+<header class="hero" id="top">
+  <div class="hero__inner">
+    <p class="badge">SOEN 345 • UX Strategy Report</p>
+    <h1>Mobile Health Management App</h1>
+    <p class="subtitle">User research → personas → journey maps → design → usability testing → reflection</p>
 
-<section>
-  <h2>Final Mock-ups</h2>
-  <img src="assets/mockups/home.png" alt="Home Screen">
-  <img src="assets/mockups/reminder.png" alt="Medication Reminder">
-</section>
+    <div class="meta">
+      <div><span class="meta__label">Author</span><span>Wendy Mbog (40259455)</span></div>
+      <div><span class="meta__label">Last update</span><span id="today"></span></div>
+    </div>
 
+    <div class="cta-row">
+      <a class="btn btn--primary" href="#prototype">Prototype link</a>
+      <a class="btn btn--ghost" href="#research">Start reading</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Quick nav -->
+  <nav class="toc card" aria-label="Page sections">
+    <h2 class="toc__title">Contents</h2>
+    <div class="toc__links">
+      <a class="chip" href="#research">1. Research</a>
+      <a class="chip" href="#journeys">2. Journey maps</a>
+      <a class="chip" href="#design">3. Design</a>
+      <a class="chip" href="#testing">4. Testing</a>
+      <a class="chip" href="#reflection">5. Reflection</a>
+    </div>
+  </nav>
+
+  <section id="research" class="card">
+    <h2>1. User Research and Persona Creation</h2>
+
+    <h3>1.1 User Research Methods</h3>
+    <p>
+      A mixed qualitative research approach was used (experience-based research, informal interviews, and secondary research)
+      to understand medication adherence challenges, emotional fatigue, and accessibility needs.
+    </p>
+
+    <h3>1.2 Persona Creation</h3>
+    <p>
+      Personas were created to represent typical users and guide UX decisions across different needs, motivations, and pain points.
+    </p>
+
+    <div class="grid-3">
+      <figure class="imgcard">
+        <img src="images/image1.jpeg" alt="Persona: Sarah – University Student with Type 1 Diabetes" data-caption="Persona 1: Sarah – University Student with Type 1 Diabetes" class="zoomable" />
+        <figcaption>Persona 1: Sarah – University Student with Type 1 Diabetes</figcaption>
+      </figure>
+
+      <figure class="imgcard">
+        <img src="images/image2.jpeg" alt="Persona: John Wanderwood – The Grandfather with Hypertension & Glaucoma" data-caption="Persona 2: John Wanderwood – The Grandfather with Hypertension & Glaucoma" class="zoomable" />
+        <figcaption>Persona 2: John Wanderwood – The Grandfather with Hypertension & Glaucoma</figcaption>
+      </figure>
+
+      <figure class="imgcard">
+        <img src="images/image3.jpeg" alt="Persona: Aline Poisson – Caregiver for a Parent with Alzheimer’s (Early Stage)" data-caption="Persona 3: Aline Poisson – Caregiver for a Parent with Alzheimer’s (Early Stage)" class="zoomable" />
+        <figcaption>Persona 3: Aline Poisson – Caregiver for a Parent with Alzheimer’s (Early Stage)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="journeys" class="card">
+    <h2>2. User Journey Mapping</h2>
+
+    <div class="stack">
+      <div>
+        <h3>2.1 User Journey Map: John</h3>
+        <figure class="imgwide">
+          <img src="images/image4.png" alt="User Journey Map: John" data-caption="2.1 User Journey Map: John" class="zoomable" />
+          <figcaption>2.1 User Journey Map: John</figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h3>2.2 User Journey Map: Sarah</h3>
+        <figure class="imgwide">
+          <img src="images/image5.png" alt="User Journey Map: Sarah" data-caption="2.2 User Journey Map: Sarah" class="zoomable" />
+          <figcaption>2.2 User Journey Map: Sarah</figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <h3>2.3 User Journey Map: Aline</h3>
+        <figure class="imgwide">
+          <img src="images/image6.png" alt="User Journey Map: Aline" data-caption="2.3 User Journey Map: Aline" class="zoomable" />
+          <figcaption>2.3 User Journey Map: Aline</figcaption>
+        </figure>
+
+        <p class="note">
+          Overview: This journey map represents the caregiver experience and highlights moments where the app can reduce stress,
+          improve trust, and support shared responsibility.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="design" class="card">
+    <h2>3. Design</h2>
+
+    <h3>3.1 Wireframes</h3>
+    <p>
+      Low-fidelity wireframes were created to outline the main structure and navigation: daily overview, medication reminders,
+      and appointment scheduling — focusing on clarity, accessibility, and minimal cognitive load.
+    </p>
+
+    <div class="grid-5">
+      <figure class="imgcard">
+        <img src="images/image7.png" alt="Wireframe 1" data-caption="3.1 Wireframes (1)" class="zoomable" />
+        <figcaption>Wireframe 1</figcaption>
+      </figure>
+      <figure class="imgcard">
+        <img src="images/image8.png" alt="Wireframe 2" data-caption="3.1 Wireframes (2)" class="zoomable" />
+        <figcaption>Wireframe 2</figcaption>
+      </figure>
+      <figure class="imgcard">
+        <img src="images/image9.png" alt="Wireframe 3" data-caption="3.1 Wireframes (3)" class="zoomable" />
+        <figcaption>Wireframe 3</figcaption>
+      </figure>
+      <figure class="imgcard">
+        <img src="images/image10.png" alt="Wireframe 4" data-caption="3.1 Wireframes (4)" class="zoomable" />
+        <figcaption>Wireframe 4</figcaption>
+      </figure>
+      <figure class="imgcard">
+        <img src="images/image11.png" alt="Wireframe 5" data-caption="3.1 Wireframes (5)" class="zoomable" />
+        <figcaption>Wireframe 5</figcaption>
+      </figure>
+    </div>
+
+    <h3 id="prototype">3.2 Prototype</h3>
+    <p class="proto-row">
+      <span>Link to the prototype:</span>
+      <a
+              class="btn btn--primary"
+              href="https://www.figma.com/proto/oa6xyZdXpMe31nMUD4EyKy/Sans-titre?node-id=1-751&t=PwW95NvDIkYWz91S-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+              target="_blank"
+              rel="noopener noreferrer"
+      >
+        Open prototype
+      </a>
+    </p>
+
+    <h3>3.3 Sketch</h3>
+    <figure class="imgwide">
+      <img src="images/image12.png" alt="Sketch" data-caption="3.3 Sketch" class="zoomable" />
+      <figcaption>3.3 Sketch</figcaption>
+    </figure>
+
+    <h3>3.4 User flow chart</h3>
+    <div class="grid-2">
+      <figure class="imgcard">
+        <img src="images/image13.png" alt="User flow chart (version 1)" data-caption="3.4 User flow chart (version 1)" class="zoomable" />
+        <figcaption>User flow chart (version 1)</figcaption>
+      </figure>
+      <figure class="imgcard">
+        <img src="images/image14.png" alt="User flow chart (version 2)" data-caption="3.4 User flow chart (version 2)" class="zoomable" />
+        <figcaption>User flow chart (version 2)</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="testing" class="card">
+    <h2>4. Usability Testing</h2>
+
+    <div class="two-col">
+      <div>
+        <h3>Testing Goals</h3>
+        <ul>
+          <li>Evaluate whether the prototype is easy to understand and navigate</li>
+          <li>Assess accessibility for different profiles (student, elderly user, caregiver)</li>
+          <li>Identify usability issues in navigation and interaction</li>
+          <li>Evaluate emotional response (stress, confidence, reassurance)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Participants & Setup</h3>
+        <ul>
+          <li>3–5 participants</li>
+          <li>Moderated, in-person or remote (screen share)</li>
+          <li>Tool: clickable prototype (Figma)</li>
+          <li>Duration: 20–30 minutes each</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>User Tasks</h3>
+    <ol>
+      <li>Add a new medication and set a daily reminder</li>
+      <li>Respond to a medication reminder (confirm or snooze)</li>
+      <li>Check the daily medication schedule</li>
+      <li>View medication history</li>
+      <li>(Caregiver only) Check whether a medication was taken</li>
+    </ol>
+
+    <h3>How feedback was analyzed</h3>
+    <p>
+      Feedback was grouped into recurring issues and prioritized by frequency and severity, then used to iterate on navigation clarity,
+      labels, hierarchy, reminder tone, and accessibility (text size, contrast).
+    </p>
+  </section>
+
+  <section id="reflection" class="card">
+    <h2>5. Reflection</h2>
+    <p>
+      The UX process helped identify user needs by shifting from assumptions to real user experiences. It highlighted that chronic condition
+      management is both functional and emotional, leading to design decisions that prioritize flexibility, accessibility, and reassurance.
+    </p>
+    <p>
+      A key challenge was meeting the needs of diverse users (busy student, elderly user, caregiver). This was addressed by universal design
+      principles: large text, high contrast, minimal steps, and customizable features, then refined through usability testing feedback.
+    </p>
+
+    <div class="footer-links">
+      <a class="btn btn--ghost" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Back to top</a>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+  <div class="lightbox__content" role="dialog" aria-modal="true">
+    <img id="lightboxImg" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
